@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artes da Sassa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: blueviolet;">
+    <header>
+
+
+        <h1>Artes da Sassa</h1>
+    </header>
+
+    <section class="sobre">
+        <img src="{{ url_for('static', filename='foto_sassa.jpg') }}" alt="Foto da Sassa">
+        <div class="descricao">
+            <p>Olá! Eu sou a Sassa, dou aulas na loja <strong>Center Panos</strong> em Bragança Paulista, ensinando a fazer bonecas de pano. Também tenho um canal no YouTube onde ensino a criar bonecas, enfeites, crochê e guirlandas.</p>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <h2>Minhas Peças</h2>
+        <div class="fotos">
+            <img src="{{ url_for('static', filename='peca1.jpg') }}" alt="Peça 1">
+            <img src="{{ url_for('static', filename='peca2.jpg') }}" alt="Peça 2">
+            <img src="{{ url_for('static', filename='peca3.jpg') }}" alt="Peça 3">
+        </div>
+    </section>
+
+    <section class="contatos">
+        <h2>Me encontre também</h2>
+        <a class="botao" href="https://youtube.com/seu_canal" target="_blank">📺 YouTube</a>
+        <a class="botao" href="https://wa.me/55SEUNUMERO" target="_blank">💬 WhatsApp</a>
+        <a class="botao" href="https://instagram.com/seu_insta" target="_blank">📷 Instagram</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Artes da Sassa - Todos os direitos reservados</p>
+    </footer>
